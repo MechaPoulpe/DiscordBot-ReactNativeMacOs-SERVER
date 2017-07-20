@@ -1,29 +1,36 @@
-var express = require('express');
-var app = express();
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-var port = 3000;
-server.listen(port, function () {
+const express = require('express');
+const Discord = require('discord.js');
+
+const app = express();
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
+
+const port = 3000;
+server.listen(port, () => {
   console.log('Server listening at port %d', port);
 });
 
-const Discord = require('discord.js');
+
 const client = new Discord.Client();
-var isSocketReady = false;
+const userId = 'UOUR-USER-DISCORD-ID';
+let isSocketReady = false;
+
+
 client.on('ready', () => {
-  console.log('Im ready dude!');
+  console.log('SocketIO OK');
 });
 
-io.on('connection', function (socket) {
+io.on('connection', () => {
   isSocketReady = true;
-  console.log('SocketIO READY')
+  console.log('Connection with app OK');
 });
 
-    client.on('message', message => {
-        console.log(message);
-        if(isSocketReady) {
-          io.emit('message', message.content)
-        }
-    });
+client.on('message', (message) => {
+  // TODO
+  // Add check on mention user id and defined user id
+  if (isSocketReady) {
+    io.emit('message', message.content);
+  }
+});
 
-client.login('MjkzMDI0MzM1OTA2NDcxOTM2.DFISpw.QM3KouMo4FOwLsmdZxFpAfjWwS8');
+client.login('YOUR-BOT-TOKEN-HERE');
