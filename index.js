@@ -12,7 +12,7 @@ server.listen(port, () => {
 
 
 const client = new Discord.Client();
-const userId = 'UOUR-USER-DISCORD-ID';
+const userId = 'YOUR-USER-DISCORD-ID';
 let isSocketReady = false;
 
 
