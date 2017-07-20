@@ -1,6 +1,5 @@
-# BotDiscord-ReactNativeMacOs-TouchBar
 
-# BotDiscord-ReactNativeMacOs-TouchBar
+# DiscordBot-ReactNativeMacOs-SERVER
 
 This is the server part, for the client part it's here : 
 
@@ -32,4 +31,3 @@ _____________________
 
 _____________________
 
-# DiscordBot-ReactNativeMacOs-SERVER
