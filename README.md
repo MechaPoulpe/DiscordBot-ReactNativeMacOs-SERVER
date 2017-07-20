@@ -1,7 +1,7 @@
 
 # DiscordBot-ReactNativeMacOs-SERVER
 
-This is the server part, for the client part it's here : 
+This is the server part, for the client part it's here : https://github.com/MechaPoulpe/DiscordBot-ReactNativeMacOs-CLIENT
 
 _____________________
 - REQUIREMENTS
