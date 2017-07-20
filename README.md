@@ -6,8 +6,8 @@ This is the server part, for the client part it's here :
 _____________________
 - REQUIREMENTS
 
-Node.JS
-Discord
+Node.JS &
+Discord account
 
 
 
